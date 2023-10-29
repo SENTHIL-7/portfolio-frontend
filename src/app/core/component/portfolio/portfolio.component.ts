@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
@@ -25,6 +26,7 @@ export class PortfolioComponent implements OnInit {
     })
     console.log("param", this.paramData);
     console.log("data", this.paramData.data);
+    // this.dynamicComponentDirective.dynamicComponent = PageNotFoundComponent;
   }
 
 

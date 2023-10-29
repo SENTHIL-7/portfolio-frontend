@@ -6,13 +6,15 @@ import { ThemesModule } from '../themes/themes.module';
 import { RouterModule } from '@angular/router';
 import { PortfolioFrontComponent } from '../themes/component/portfolio-front/portfolio-front.component';
 import { PageNotFoundComponent } from './component/page-not-found/page-not-found.component';
+import { DynamicComponentDirective } from './directive/dynamic-component.directive';
 
 
 
 @NgModule({
   declarations: [
     PortfolioComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DynamicComponentDirective
   ],
   imports: [
     // RouterModule.forChild([
@@ -21,6 +23,9 @@ import { PageNotFoundComponent } from './component/page-not-found/page-not-found
     CommonModule,
     SharedModule,
     ThemesModule
+  ],
+  exports: [
+    // DynamicComponentDirective
   ]
 })
 export class CoreModule { }
