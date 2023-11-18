@@ -1,25 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// primeNG module
-import { ButtonModule } from 'primeng/button';
 import { HeaderComponent } from './component/header/header.component';
 import { FooderComponent } from './component/fooder/fooder.component';
+import { DynamicComponentDirective } from './directive/dynamic-component.directive';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooderComponent
+    FooderComponent,
+    DynamicComponentDirective
   ],
   imports: [
     CommonModule,
-    ButtonModule
   ],
   exports: [
     HeaderComponent,
     FooderComponent,
-    ButtonModule
+    DynamicComponentDirective
   ]
 })
 export class SharedModule { }
