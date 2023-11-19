@@ -1,0 +1,59 @@
+.section {
+    background-color: #111;
+    padding: 20px 10px;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 986px;
+    margin: auto;
+}
+
+.section-title {
+    padding: 10px 20px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.heading {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 33px;
+    color: green;
+}
+
+.date {
+    margin-bottom: 28px;
+    color: #a2a2a2;
+}
+
+.roleOrEduction {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.companyOrInstituteName {
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 18px;
+}
+
+::ng-deep .basic-home-experience-section .p-timeline .p-timeline-event-marker {
+    border: none;
+    border-radius: 50%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #656565;
+}
+
+::ng-deep .basic-home-experience-section .p-timeline .p-timeline-event-connector {
+    background-color: #656565;
+}
+
+::ng-deep .basic-home-experience-section .p-timeline.p-timeline-vertical .p-timeline-event-connector {
+    width: 1px;
+}

@@ -4,6 +4,8 @@ import { PortfolioFrontComponent } from './component/portfolio-front/portfolio-f
 import { BasicHomeBannerComponent } from './BasicTheme/home/basic-home-banner/basic-home-banner.component';
 import { BasicHomeSkillsComponent } from './BasicTheme/home/basic-home-skills/basic-home-skills.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
+import { BasicHomeAboutSummaryComponent } from './BasicTheme/home/basic-home-about-summary/basic-home-about-summary.component';
+import { BasicHomeExperienceComponent } from './BasicTheme/home/basic-home-experience/basic-home-experience.component';
 
 
 
@@ -11,7 +13,9 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
   declarations: [
     PortfolioFrontComponent,
     BasicHomeBannerComponent,
-    BasicHomeSkillsComponent
+    BasicHomeSkillsComponent,
+    BasicHomeAboutSummaryComponent,
+    BasicHomeExperienceComponent
   ],
   imports: [
     CommonModule,

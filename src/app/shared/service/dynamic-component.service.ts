@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
+import { BasicHomeAboutSummaryComponent } from 'src/app/themes/BasicTheme/home/basic-home-about-summary/basic-home-about-summary.component';
 import { BasicHomeBannerComponent } from 'src/app/themes/BasicTheme/home/basic-home-banner/basic-home-banner.component';
+import { BasicHomeExperienceComponent } from 'src/app/themes/BasicTheme/home/basic-home-experience/basic-home-experience.component';
 import { BasicHomeSkillsComponent } from 'src/app/themes/BasicTheme/home/basic-home-skills/basic-home-skills.component';
 import { DynamicComponentDataType } from '../model/dynamicComponentType';
 
@@ -17,7 +19,7 @@ export class DynamicComponentService {
           text: "Senthil Kumar",
           styles: {
             'background-color': '',
-            'color': '#ffffff',
+            'color': 'green',
             'text-align': 'left',
             'font-size': '60px',
             'font-weight': 'bold',
@@ -43,6 +45,21 @@ export class DynamicComponentService {
           lable: 'heading text',
           isVisible: true
         },
+        description: {
+          text: "I engineer simplicity through elegant code. Passionate about crafting streamlined solutions, I blend design and coding to create beautifully functional software. My love for this craft drives every line of code I write. Let's build something elegantly simple together.",
+          styles: {
+            'background-color': '',
+            'color': '',
+            'text-align': '',
+            'font-size': '',
+            'font-weight': '',
+            'padding': null
+          },
+          cssData: '',
+          dataType: 'Text',
+          lable: 'Description Text',
+          isVisible: true
+        },
 
         image: {
           url: "./assets/mypic/senthilProfile.jpg",
@@ -60,46 +77,122 @@ export class DynamicComponentService {
 
     },
     {
-      selector: 'BasicHomeSkillsComponent',
+      selector: 'BasicHomeAboutSummaryComponent',
       data: {
-        title: {
-          text: "Skills",
+        sectionTitle: {
+          text: "ABOUT",
           styles: {
             'background-color': '',
-            'color': '#ffffff',
-            'text-align': 'left',
-            'font-size': '50px',
-            'padding': '20px',
-            'font-weight': 'bold'
+            'color': '',
+            'text-align': '',
+            'font-size': '',
+            'padding': '',
+            'font-weight': ''
           },
           cssData: '',
           dataType: 'Text',
-          lable: 'Title',
+          lable: 'ABOUT',
+          isVisible: true
+        },
+        heading: {
+          text: "Software Engineer & Tech Enthusiast",
+          styles: {
+            'background-color': '',
+            'color': '',
+            'text-align': '',
+            'font-size': '',
+            'padding': '',
+            'font-weight': ''
+          },
+          cssData: '',
+          dataType: 'Text',
+          lable: 'Heading',
+          isVisible: true
+        },
+        story: {
+          text: `Passionate about crafting digital experiences, I wield a versatile toolkit: Angular, MySQL, Node, Java, SCSS, and more. With one year dedicated to professional software development, I blend creativity with technical expertise. Fluent in Angular Material and PrimeNG, I specialize in seamless UIs. A four-year programming journey fuels my innovation. I believe in technology's power to transform, striving to exceed expectations in every project. Beyond code, I explore tech frontiers, devouring knowledge. Eager to collaborate and driven by challenges, let's embark on a journey of innovation together!`,
+          styles: {
+            'background-color': '',
+            'color': '',
+            'text-align': '',
+            'font-size': '',
+            'padding': '',
+            'font-weight': ''
+          },
+          cssData: '',
+          dataType: 'Text',
+          lable: 'Story',
           isVisible: true
         },
         isVisible: true
       },
       setting: {}
     },
-    // {
-    //   selector: 'BasicHomeBannerComponent',
-    //   data: {
-    //     name: 'Bombasto3', bio: 'Brave as they come3',
-    //     isVisible: true
-    //   },
-    // },
-    // {
-    //   selector: 'BasicHomeBannerComponent',
-    //   data: {
-    //     headline: 'Bombasto4 headline',
-    //     body: 'Brave as they come4 body',
-    //     isVisible: true
-    //   }
-    // },
+    {
+      selector: 'BasicHomeSkillsComponent',
+      data: {
+        sectionTitle: {
+          text: "MY SKILLS",
+          styles: {
+            'background-color': '',
+            'color': '',
+            'text-align': '',
+            'font-size': '',
+            'padding': '',
+            'font-weight': ''
+          },
+          cssData: '',
+          dataType: 'Text',
+          lable: 'My Skills',
+          isVisible: true
+        },
+        isVisible: true
+      },
+      setting: {}
+    },
+    {
+      selector: 'BasicHomeExperienceComponent',
+      data: {
+        sectionTitle: {
+          text: "RESUME",
+          styles: {
+            'background-color': '',
+            'color': '',
+            'text-align': '',
+            'font-size': '',
+            'padding': '',
+            'font-weight': ''
+          },
+          cssData: '',
+          dataType: 'Text',
+          lable: 'Resume text',
+          isVisible: true
+        },
+        heading: {
+          text: "Education & Experience",
+          styles: {
+            'background-color': '',
+            'color': '',
+            'text-align': '',
+            'font-size': '',
+            'padding': '',
+            'font-weight': ''
+          },
+          cssData: '',
+          dataType: 'Text',
+          lable: 'Heading',
+          isVisible: true
+        },
+        isVisible: true
+      },
+      setting: {}
+    },
   ];
   typeComponent: any = {
     BasicHomeBannerComponent: BasicHomeBannerComponent,
+    BasicHomeAboutSummaryComponent: BasicHomeAboutSummaryComponent,
     BasicHomeSkillsComponent: BasicHomeSkillsComponent,
+    BasicHomeExperienceComponent: BasicHomeExperienceComponent
   };
   getComponent() {
     return this.HomePage.map((x: any) => {
@@ -116,23 +209,5 @@ export class DynamicComponentService {
         // x.data
       );
     });
-    // new AdItem(
-    //   BasicHomeBannerComponent,
-    //   { name: 'Bombasto1', bio: 'Brave as they come' }
-    // ),
-    // new AdItem(
-    //   BasicHomeBannerComponent,
-    //   { name: 'Dr. IQ 2', bio: 'Smart as they come' }
-    // ),
-
-    // new AdItem(
-    //   BasicHomeBannerComponent,
-    //   { headline: 'Hiring for several positions 3', body: 'Submit your resume today!' }
-    // ),
-    // new AdItem(
-    //   BasicHomeBannerComponent,
-    //   { headline: 'Openings in all departments 4', body: 'Apply today' }
-    // )
-    // ];
   }
 }

@@ -1,0 +1,41 @@
+.section {
+    background-color: #111;
+    padding: 10px;
+
+}
+
+.container {
+    max-width: 986px;
+    margin: auto;
+}
+
+.section-title,
+.heading,
+.story {
+    color: white;
+}
+
+.section-title {
+    padding: 10px 20px;
+    border: 1px solid white;
+    display: inline-block;
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.heading {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 400;
+    margin-bottom: 33px;
+    color: green;
+}
+
+.story {
+    font-weight: 500;
+    margin-bottom: 65px;
+    word-break: normal;
+    color: #a2a2a2;
+    line-height: 25px;
+    font-size: 18px;
+}

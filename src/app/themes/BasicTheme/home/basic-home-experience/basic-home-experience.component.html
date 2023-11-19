@@ -1,0 +1,22 @@
+<div class="section basic-home-experience-section">
+    <div class="container ">
+        <div class="section-title" [ngStyle]='data?.sectionTitle?.styles'>{{data?.sectionTitle?.text}}</div>
+        <div class="heading" [ngStyle]='data?.heading?.styles'>{{data?.heading?.text}}</div>
+
+        <div class="card">
+            <p-timeline [value]="events">
+                <ng-template pTemplate="content" let-event>
+                    <div class="date">
+                        {{ event.date }}
+                    </div>
+                    <div class="roleOrEduction">
+                        {{ event.roleOrEduction }}
+                    </div>
+                    <div class="companyOrInstituteName">
+                        {{ event.companyOrInstituteName }}
+                    </div>
+                </ng-template>
+            </p-timeline>
+        </div>
+    </div>
+</div>
