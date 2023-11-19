@@ -12,7 +12,7 @@ import { PageNotFoundComponent } from './component/page-not-found/page-not-found
 @NgModule({
   declarations: [
     PortfolioComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     // RouterModule.forChild([
@@ -21,6 +21,9 @@ import { PageNotFoundComponent } from './component/page-not-found/page-not-found
     CommonModule,
     SharedModule,
     ThemesModule
+  ],
+  exports: [
+    // DynamicComponentDirective
   ]
 })
 export class CoreModule { }

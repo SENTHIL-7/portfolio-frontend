@@ -4,6 +4,7 @@ import { PortfolioComponent } from './core/component/portfolio/portfolio.compone
 import { PortfolioFrontComponent } from './themes/component/portfolio-front/portfolio-front.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'portfolio/senthil', pathMatch: "full" },
   {
     path: 'portfolio', component: PortfolioComponent, children: [
       { path: '', component: PortfolioComponent },
